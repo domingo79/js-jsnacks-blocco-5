@@ -1,8 +1,8 @@
-/*Snack 2:
-Crea 10 oggetti che rappresentano una zucchina.
-Dividi in due array separati le zucchine che misurano meno o più di 15cm.
-Infine stampa separatamente quanto pesano i due gruppi di zucchine.*/
+/*
+* Snack 2:
+*/
 
+//Crea 10 oggetti che rappresentano una zucchina.
 var Zucchina = [
     { varieta: 'Zucchino nero di Milano', peso: 30, lunghezza: 10 },
     { varieta: 'Zucchino romanesco', peso: 35, lunghezza: 11 },
@@ -15,6 +15,8 @@ var Zucchina = [
     { varieta: 'Zucchino giallo', peso: 18, lunghezza: 19 },
     { varieta: 'Zucchina trombetta di Albenga', peso: 25, lunghezza: 20 }
 ];
+
+// Dividi in due array separati le zucchine che misurano meno o più di 15cm.
 
 var zucchinaCorta = [];
 var zucchinaLunga = [];
@@ -29,3 +31,19 @@ for (var i = 0; i < Zucchina.length; i++) {
 }
 console.log('Array di zucchine corte: ', zucchinaCorta);
 console.log('Array di zucchine lunghe: ', zucchinaLunga);
+
+//Infine stampa separatamente quanto pesano i due gruppi di zucchine.
+
+var persoZucchineCorte = 0, pesoZucchineLunghe = 0;
+
+for (var i = 0; i < zucchinaLunga.length; i++) {
+    var ele = zucchinaLunga[i];
+    pesoZucchineLunghe += ele.peso
+}
+console.log('peso totale zucchine lunghe: ', pesoZucchineLunghe);
+
+for (var i = 0; i < zucchinaCorta.length; i++) {
+    var ele = zucchinaCorta[i];
+    persoZucchineCorte += ele.peso
+}
+console.log('peso totale zucchine corte: ', persoZucchineCorte);
