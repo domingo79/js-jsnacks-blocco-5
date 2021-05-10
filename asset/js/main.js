@@ -16,21 +16,28 @@ La funzione ritornerà un nuovo array con i valori che hanno la posizione compre
 Crea un array di 10 oggetti che rappresentano una zucchina, indicando per ognuna varietà, peso e lunghezza.
 Calcola quanto pesano tutte le zucchine.*/
 var zucchina = [
-    { varietà: 'Zucchino nero di Milano', peso: 30, lunghezza: 15 },
-    { varietà: 'Zucchino romanesco', peso: 35, lunghezza: 16 },
-    { varietà: 'Zucchino ortolano di Faenza', peso: 40, lunghezza: 17 },
-    { varietà: 'Zucchina lunga fiorentina', peso: 30, lunghezza: 18 },
-    { varietà: 'Zucchino siciliano', peso: 35, lunghezza: 19 },
-    { varietà: 'Zucchina striata di Napoli', peso: 40, lunghezza: 20 },
-    { varietà: 'Zucchina rigata pugliese', peso: 25, lunghezza: 21 },
-    { varietà: 'Zucchina Crookneck', peso: 27, lunghezza: 22 },
-    { varietà: 'Zucchino giallo', peso: 18, lunghezza: 23 },
-    { varietà: 'Zucchina trombetta di Albenga', peso: 25, lunghezza: 24 }
-]
+    { varieta: 'Zucchino nero di Milano', peso: 30, lunghezza: 15 },
+    { varieta: 'Zucchino romanesco', peso: 35, lunghezza: 16 },
+    { varieta: 'Zucchino ortolano di Faenza', peso: 40, lunghezza: 17 },
+    { varieta: 'Zucchina lunga fiorentina', peso: 30, lunghezza: 18 },
+    { varieta: 'Zucchino siciliano', peso: 35, lunghezza: 19 },
+    { varieta: 'Zucchina striata di Napoli', peso: 40, lunghezza: 20 },
+    { varieta: 'Zucchina rigata pugliese', peso: 25, lunghezza: 21 },
+    { varieta: 'Zucchina Crookneck', peso: 27, lunghezza: 22 },
+    { varieta: 'Zucchino giallo', peso: 18, lunghezza: 23 },
+    { varieta: 'Zucchina trombetta di Albenga', peso: 25, lunghezza: 24 }
+];
+
+//console.log(zucchina[0].lunghezza)
+
+var somma = 0;
+
 for (var i = 0; i < zucchina.length; i++) {
     var elem = zucchina[i];
-    console.log(elem.peso);
+    // console.log(elem.peso);
+    somma += elem.peso;
 }
+console.log('La somma totale è: ' + somma);
 
 
 
