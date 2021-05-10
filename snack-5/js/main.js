@@ -13,7 +13,6 @@ function intervallo(arr, min, max) {
         newArray.push(ele)
     }
     return newArray;
-
 }
 var arrNuovo = intervallo(numeri, a, b);
 console.log(arrNuovo);
