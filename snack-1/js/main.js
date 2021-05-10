@@ -20,7 +20,6 @@ var somma = 0;
 
 for (var i = 0; i < Zucchina.length; i++) {
     var elem = Zucchina[i];
-    test = elem.lunghezza
     somma += elem.peso;
 }
 console.log('La somma totale è: ' + somma);
